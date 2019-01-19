@@ -1,11 +1,15 @@
 
 var BankAccount = {
   balance: 0,
+  name:"",
+
   withdraw: function(amount) {
       this.balance = this.balance - amount;
+      this.name=this.name;
   },
   deposit: function(amount) {
     this.balance = this.balance + amount;
+    this.name=this.name;
 }
 };
 $(document).ready(function() {
@@ -16,7 +20,9 @@ var inputtedName = $("input#name").val();
 var inputtedBalance = parseInt($("input#initial").val());
 newAccount.name = inputtedName;
 newAccount.deposit(inputtedBalance);
+$(".names").text(newAccount.name);
 $(".balance").text(newAccount.balance);
+
 });
 $("form#manage").submit(function(event) {
 event.preventDefault();

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <!-- <div class="container">
+        
+       
+  
+        <div class="row">
+  
+          <div class="col-md-6">
+            <p>Register new account</p>
+            <form id="new-contact">
+              <div class="form-group">
+                <label for="new-first-name">First name</label>
+                <input type="text" class="form-control" id="new-first-name">
+              </div>
+              <div class="form-group">
+                <label for="new-last-name">Last name</label>
+                <input type="text" class="form-control" id="new-last-name">
+              </div>
+  
+              <div id="new-addresses">
+                <div class="new-address">
+                  <div class="form-group">
+                    <label for="new-street">Initial Deposit</label>
+                    <input type="text" class="form-control new-street">
+                  </div>
+                  <p>Deposit or withdraw</p>
+                  <div class="form-group">
+                    <label for="deposit">Deposit</label>
+                    <input type="text" class="form-control new-deposit">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-withdraw">withdraw</label>
+                    <input type="text" class="form-control new-withdraw">
+                  </div>
+                </div>
+              </div>
+  
+              <span class="btn btn-primary" id="add-address">checking balance</span>
+  
+              <button type="submit" class="btn">save</button>
+            </form>
+  
+            
+            <ul id="contacts">
+  
+            </ul>
+          </div>
+  
+          <div class="col-md-6">
+            <div id="show-contact">
+              <h2></h2>
+              <p>First name: <span class="first-name"></span></p>
+              <p>Last name: <span class="last-name"></span></p>
+              <p>Addresses:</p>
+              <ul id="addresses">
+  
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+      </div>-->
+     
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <title>B&K HomieBank</title>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Bank Account</h1>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Register new account</h2>
+                        <form id="create">
+                          <div class="form-group">
+                            <label for="firstname">firstname</label>
+                            <input id="name" type="text" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="lastname">lastname</label>
+                              <input id="name" type="text" required>
+                            </div>
+                          <div class="form-group">
+                            <label for="initial">Initial amount</label>
+                            <input id="initial" type="number" required>
+                          </div>
+                          <button type="save" class="btn btn-info">Save</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                      <form id="manage">
+                        <div class="form-group">
+                          <label for="deposit">Deposit</label>
+                          <input id="deposit" type="number" required>
+                        </div>
+                        <button type="add" class="btn btn-info">Add</button>
+                      </form>
+                      <h2>Deposit or withdraw</h2>
+                      <form id="withdraw">
+                        <div class="form-group">
+                          <label for="withdraw">Withdraw</label>
+                          <input id="withdraw" type="number" required>
+                        </div>
+                        <button type="withdraw" class="btn btn-info">withdraw</button>
+                      </form>
+                  </div>
+                </div>
+                <hr/>
+                <div class="account">
+                  <div class="row">
+                    <h3>Your Account Balance is:</h2>
+                    <h1 class="balance"></h1>
+                  </div>
+                </div>
+            </div>
+        </body>
+        </html>
+
+    </body>
+  </html>
+</body>
+</html>

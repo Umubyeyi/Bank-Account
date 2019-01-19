@@ -23,7 +23,7 @@ var BankAccount = {
   var newBalance = parseInt($("input#deposit").val());
   newAccount.deposit(newBalance);
   $(".balance").text(newAccount.balance);
-  // $("#manage").unbind('submit');
+  
   });
   $("form#withdraw").submit(function(event) {
   event.preventDefault();

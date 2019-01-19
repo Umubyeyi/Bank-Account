@@ -17,10 +17,14 @@ var newAccount = Object.create(BankAccount);
 $("form#create").submit(function(event) {
 event.preventDefault();
 var inputtedName = $("input#name").val();
+
+
 var inputtedBalance = parseInt($("input#initial").val());
 newAccount.name = inputtedName;
+
 newAccount.deposit(inputtedBalance);
 $(".names").text(newAccount.name);
+
 $(".balance").text(newAccount.balance);
 
 });
